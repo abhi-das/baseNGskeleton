@@ -1,0 +1,12 @@
+<form name="lForm" novalidate>
+	<fieldset class="form-group">
+		<label for="uName">User:</label>
+		<input type="text" name="uName" id="uName" class="form-control" ng-model="uName" placeholder="User Name" required>
+		<p class="text-danger" ng-show="lForm.uName.$invalid && lForm.uName.$touched">User name is required.</p>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="uPass">Password:</label>
+		<input type="text" name="uPass" id="uPass" class="form-control" ng-model="uPass" placeholder="Password" required>
+		<p class="text-danger" ng-show="lForm.uPass.$invalid && lForm.uPass.$touched">Password is required.</p>
+	</fieldset>
+</form>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="US-en">
+<html lang="US-en" ng-app="baseApp">
 
 	<head>
 		<meta charset='utf-8'>
@@ -40,7 +40,8 @@
 					<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
 					<span class="octicon octicon-link"></span></a>Welcome to App Project.
 				</h3>
-				<p>Site needs to update here..</p>
+				<!-- <p>Site needs to update here..</p> -->
+				<div ng-view></div>
 			</div>
 		</section>
 
@@ -56,5 +57,7 @@
 	<script src="https://cdn.jsdelivr.net/angularjs/1.4.7/angular-route.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/angularjs/1.4.7/angular-animate.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery/3.0.0-beta1/jquery.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
 	
 </html>
