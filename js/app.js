@@ -1,6 +1,6 @@
 "use strict";
 
-	var app = angular.module("baseApp", ["ngRoute", "appCtrls"]);
+	var app = angular.module("baseApp", ["ngRoute", "appCtrls", "appDrvs"]);
 
 	app.config(["$routeProvider", function($rProvider){
 
@@ -8,6 +8,10 @@
 		.when("/landing",{
 			templateUrl: "partials/landing.html",
 			controller: "LandingCtrl"
+		})
+		.when("/d3",{
+			templateUrl: "partials/barchart.html",
+			controller: "BarChartCtrl"
 		})
 		.otherwise({
 			redirectTo: "/landing"

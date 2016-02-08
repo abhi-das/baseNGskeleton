@@ -10,23 +10,13 @@
 
 
 	}])
-	.directive("loginForm",[function(){
+	.controller("BarChartCtrl",["$scope", function($scope){
 
-		var lForm = {};
-
-		lForm = {
-			restrict: "EAC",
-			scope: {},
-			templateUrl: "partials/directives/login-form.html",
-			controller: ["$scope", function($scope){
-				// $scope.uName = "User Name";
-				// $scope.uPass = "Password";
-			}]
-		};
-
-		return lForm;
+		console.log("bar char init..");
+		$scope.mvchart = [20,15,35,66,75,25,95,50];
 
 	}]);
+	
 
 
 
